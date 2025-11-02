@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>joke center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>😂 joke center</h1>
+
+  <!-- random joke section -->
+  <section id="random-joke">
+    <h2>random joke</h2>
+    <p id="joke-text">loading...</p>
+    <button id="new-random">get another</button>
+  </section>
+
+  <hr>
+
+  <!-- categories section -->
+  <section id="categories">
+    <h2>categories</h2>
+    <button id="load-categories">load categories</button>
+    <ul id="category-list"></ul>
+  </section>
+
+  <hr>
+
+  <!-- search section -->
+  <section id="search">
+    <h2>search jokes by category</h2>
+    <input type="text" id="search-input" placeholder="enter category name" />
+    <button id="search-btn">search</button>
+    <ul id="joke-results"></ul>
+  </section>
+
+  <hr>
+
+  <!-- add joke section -->
+  <section id="add-joke">
+    <h2>add a new joke</h2>
+    <form id="joke-form">
+      <input type="text" id="joke-setup" placeholder="joke setup" required />
+      <input type="text" id="joke-delivery" placeholder="joke delivery" required />
+      <input type="text" id="joke-category" placeholder="category" required />
+      <button type="submit">add joke</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
