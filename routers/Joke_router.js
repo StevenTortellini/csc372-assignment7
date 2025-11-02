@@ -2,15 +2,17 @@
 
 const express = require("express");
 const router = express.Router();
-const JokeController = require('../controllers/JokeController');
+const { 
+  fetchAllCategories, 
+  fetchJokes, 
+  fetchRandomJoke, 
+  createJoke 
+} = require("../controllers/JokeController");
 
-
-
-
-router.get("/categories",JokeController.fetchAllCategories);
-router.get("/category/:category",JokeController.fetchJokes);
-router.get("/random", JokeController.fetchRandomJoke);
-router.post("/joke/add", JokeController.createJoke);
+router.get("/categories", fetchAllCategories);
+router.get("/category/:category", fetchJokes);
+router.get("/random", fetchRandomJoke);
+router.post("/joke/add", createJoke);
 
 module.exports = router;
 
